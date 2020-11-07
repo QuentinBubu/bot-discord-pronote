@@ -1,5 +1,6 @@
 {
     "require": {
-        "webonyx/graphql-php": "^14.3"
+        "webonyx/graphql-php": "^14.3",
+        "team-reflex/discord-php": "^5.0"
     }
 }
