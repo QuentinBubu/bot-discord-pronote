@@ -1,0 +1,1 @@
+query timetable($timetableFrom:Date,$timetableTo:Date){timetable(from: $timetableFrom, to: $timetableTo){room,subject,teacher}}
