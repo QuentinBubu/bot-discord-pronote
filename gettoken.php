@@ -35,5 +35,3 @@ $token = getCurl(
     '127.0.0.1:21727/auth/login',
     json_encode($casInfos)
 );
-
-echo $token;

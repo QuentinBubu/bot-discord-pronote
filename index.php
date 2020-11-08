@@ -4,6 +4,7 @@ header('Content-Type application/json');
 
 require 'credentials.php';
 require 'graphqlData/variables.php';
+require 'gettoken.php';
 
 function getCurl($header, $url, $data) {
     $curl = curl_init();
@@ -37,9 +38,6 @@ $token = getCurl(
     json_encode($casInfos)
 );*/
 
-
-$token = '{"token":"89e1734e-b823-4460-9a32-5a086da5f5d2"}';
-
 $request = '{"query":"' . file_get_contents('graphqlData/schema.graphql') .'",'. substr(getVariables(), 1, -1) .',"operationName":"timetable"}';
 var_dump($request);
 
@@ -53,7 +51,3 @@ $data = getCurl(
     $request
 );
 
-echo '<pre>';
-var_dump($token);
-var_dump($data);
-echo '</pre>';
