@@ -330,9 +330,13 @@ class Message extends Part
      * @return PromiseInterface
      * @throws \Exception
      */
-    public function reply(string $text): PromiseInterface
+    public function reply(string $text, bool $userMention = true): PromiseInterface
     {
-        return $this->channel->sendMessage("{$this->author}, {$text}");
+        if ($userMention) {
+            return $this->channel->sendMessage("{$this->author}, {$text}");
+        } else {
+            return $this->channel->sendMessage("{$text}");
+        }
     }
 
     /**

@@ -12,8 +12,12 @@ function updateRichPresence(&$discord) {
         'réciter sa leçon',
         'observer',
         'voler avec ses papillons',
-        'se démonter'
-    ];
+        'se démonter',
+        'fusionner 2 zéros',
+        'préfixes: & ou pronote',
+        'help: &help',
+        'help: pronote help'
+        ];
     $activity = $discord->factory(Activity::class, [
         'type' => Activity::TYPE_PLAYING,
         'name' => $playingTo[random_int(0, count($playingTo)-1)],

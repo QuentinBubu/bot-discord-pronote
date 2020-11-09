@@ -1,0 +1,79 @@
+object(Discord\Parts\Channel\Message)#731 (22) {
+  ["id"]=>
+  string(18) "775411831639638096"
+  ["channel_id"]=>
+  string(18) "774948551217119232"
+  ["content"]=>
+  string(42) "&setNotificationChannel 774948551217119232"
+  ["type"]=>
+  int(0)
+  ["mentions"]=>
+  object(Discord\Helpers\Collection)#211 (0) {
+  }
+  ["author"]=>
+  object(Discord\Parts\User\User)#482 (13) {
+    ["id"]=>
+    string(18) "638351262827675661"
+    ["username"]=>
+    string(12) "Quentin_bubu"
+    ["avatar"]=>
+    string(100) "https://cdn.discordapp.com/avatars/638351262827675661/c9169b65b9ad59197e5cf773d462014e.jpg?size=1024"
+    ["discriminator"]=>
+    string(4) "3292"
+    ["bot"]=>
+    NULL
+    ["system"]=>
+    NULL
+    ["mfa_enabled"]=>
+    NULL
+    ["locale"]=>
+    NULL
+    ["verified"]=>
+    NULL
+    ["email"]=>
+    NULL
+    ["flags"]=>
+    NULL
+    ["premium_type"]=>
+    NULL
+    ["public_flags"]=>
+    int(256)
+  }
+  ["mention_everyone"]=>
+  bool(false)
+  ["timestamp"]=>
+  string(20) "2020-11-09T17:29:47Z"
+  ["edited_timestamp"]=>
+  NULL
+  ["tts"]=>
+  bool(false)
+  ["attachments"]=>
+  array(0) {
+  }
+  ["embeds"]=>
+  object(Discord\Helpers\Collection)#802 (0) {
+  }
+  ["nonce"]=>
+  string(18) "775411826941755392"
+  ["mention_roles"]=>
+  object(Discord\Helpers\Collection)#707 (0) {
+  }
+  ["pinned"]=>
+  bool(false)
+  ["mention_channels"]=>
+  object(Discord\Helpers\Collection)#503 (0) {
+  }
+  ["reactions"]=>
+  object(Discord\Helpers\Collection)#809 (0) {
+  }
+  ["webhook_id"]=>
+  NULL
+  ["activity"]=>
+  NULL
+  ["application"]=>
+  NULL
+  ["message_reference"]=>
+  NULL
+  ["flags"]=>
+  int(0)
+}

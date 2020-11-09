@@ -1,22 +1,24 @@
 <?php
 
-use Discord\Parts\Channel\Message;
-
 include __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/credentials.php';
 require __DIR__ . '/bot/MyFunctions.php';
 require __DIR__ . '/bot/message.php';
+require __DIR__ . '/bot/globalArray.php';
+// require __DIR__ . '/index.php';
 
-$discord = new \Discord\Discord([
-    'token' => $tokenBot,
+use Discord\DiscordCommandClient;
+
+$discord = new DiscordCommandClient([
+  'token' => $tokenBot,
+  'prefix' => 'pronote ',
 ]);
 
 $discord->on('ready', function ($discord) {
     echo "Bot is ready.", PHP_EOL;
-    // Listen for events here
-    $discord->on('message', function ($message) use ($discord) {
+    $discord->on('message', function ($message) {
         echo "Recieved a message from {$message->author->username}: {$message->content}", PHP_EOL;
-        newMessage($message, $discord);
+        newMessage($message);
     });
 
     $discord->loop->addPeriodicTimer(60, function () use ($discord) {
@@ -50,4 +52,24 @@ $discord->on('ready', function ($discord) {
     'party' => 0
 ]);
 */
+
+
+
+
+$discord->registerCommand('ping', function () {
+    return 'pong!';
+},
+[
+    'description' => 'pong!',
+]
+);
+
+// $discord->registerCommand('', ['hey', 'hello'], ['aliases' => ['1', '2', '3']]);
+
+
+
+
+
+
+
 $discord->run();

@@ -36,7 +36,8 @@
             "src/Discord/functions.php"
         ],
         "psr-4": {
-            "Discord\\": "src/Discord"
+            "Discord\\": "src/Discord",
+            "Bot\\": "../../../bot"
         }
     },
     "suggest": {

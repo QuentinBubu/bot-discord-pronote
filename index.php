@@ -50,4 +50,3 @@ $data = getCurl(
     '127.0.0.1:21727/graphql',
     $request
 );
-
