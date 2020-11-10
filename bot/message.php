@@ -1,6 +1,7 @@
 <?php
 
-require_once 'commands/Notification.php';
+require_once 'commands/notification.php';
+require_once 'commands/server.php';
 
 function newMessage(&$message) {
     if (
@@ -38,8 +39,17 @@ function newMessage(&$message) {
                 $message->reply("```json\n{$text}\n```", false);
             break;
 
+            case 'setServerId';
+                setServerId($message, $details['value']);
+            break;
+
             case 'everyone';
-            $message->reply('<@everyone>', false);
+                $message->reply('@everyone', false);
+            break;
+
+            case 'addPrefix';
+                addPrefix($message, $details['value']);
+            break;
 
             default;
                 $message->reply('Oh non, commande inconnue... `pronote help`');

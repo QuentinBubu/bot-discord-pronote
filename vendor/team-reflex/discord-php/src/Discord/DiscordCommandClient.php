@@ -89,7 +89,7 @@ class DiscordCommandClient extends Discord
         });
 
         if ($this->commandClientOptions['defaultHelpCommand']) {
-            $this->registerCommand('help', function ($message, $args) {
+            $this->registerCommand('helpBotUsage', function ($message, $args) {
                 $prefix = str_replace((string) $this->user, '@'.$this->username, $this->commandClientOptions['prefix']);
 
                 if (count($args) > 0) {

@@ -28,5 +28,19 @@ $GLOBALS['data']['commands'] = [
             'Description' => 'Command set channel where pronote informations will be send',
             'Usage' => '`pronote setNotificationChannel CHANNEL_ID`'
         ],
+        'setServerId' => [
+            'Name' => 'setServerId',
+            'Description' => 'Command for set ID of server',
+            'Usage' => '`pronote setServerId SERVER_ID`'
+        ],
+        'addPrefix' => [
+            'Name' => 'addPrefix',
+            'Description' => 'Command for add bot prefix',
+            'Usage' => '`pronote addPrefix PREFIX`'
+        ]
     ]
+];
+
+$GLOBALS['data']['server'] = [
+    'serverId' => null
 ];

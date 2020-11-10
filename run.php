@@ -6,8 +6,10 @@ require __DIR__ . '/bot/MyFunctions.php';
 require __DIR__ . '/bot/message.php';
 require __DIR__ . '/bot/globalArray.php';
 // require __DIR__ . '/index.php';
+require __DIR__ . '/bot/periodicFetch.php';
 
 use Discord\DiscordCommandClient;
+use Illuminate\Support\Facades\Date;
 
 $discord = new DiscordCommandClient([
   'token' => $tokenBot,
@@ -23,6 +25,10 @@ $discord->on('ready', function ($discord) {
 
     $discord->loop->addPeriodicTimer(60, function () use ($discord) {
         updateRichPresence($discord);
+    });
+
+    $discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
+        $date = new Date('now');
     });
 });
 
@@ -66,7 +72,7 @@ $discord->registerCommand('ping', function () {
 
 // $discord->registerCommand('', ['hey', 'hello'], ['aliases' => ['1', '2', '3']]);
 
-
+// $discord->guilds[741229545579085876]->channels[774948551217119232]->sendMessage('Hello!', false);
 
 
 

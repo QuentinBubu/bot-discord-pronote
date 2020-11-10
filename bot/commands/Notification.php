@@ -6,5 +6,5 @@ function notificationInformation() {
 
 function setNotificationChannel(&$message, $channel) {
     $GLOBALS['data']['notification']['channel'] = "<#{$channel}>";
-    $message->reply("now, notification channel is {$GLOBALS['data']['notification']['channel']}!");
+    $message->reply("maintenant, le channel pour les notifications est {$GLOBALS['data']['notification']['channel']}!");
 }
