@@ -9,3 +9,7 @@ API created by Litarvan
 `pronote-api-server`
 <br />
 `php -S localhost:3000`
+<br />
+## Please
+
+Create a `credentials.php` file at racine of project with your identifiant, folow schema from `index.php`
