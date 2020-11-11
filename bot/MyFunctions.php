@@ -14,7 +14,7 @@ function updateRichPresence(&$discord) {
         'voler avec ses papillons',
         'se démonter',
         'fusionner 2 zéros',
-        'préfixes: & ou pronote',
+        'préfixes: ' . json_encode($GLOBALS['data']['prefix']),
         'help: &help',
         'help: pronote help'
         ];
@@ -23,4 +23,53 @@ function updateRichPresence(&$discord) {
         'name' => $playingTo[random_int(0, count($playingTo)-1)],
     ]);
     $discord->updatePresence($activity, false, 'online', false);
+}
+
+function getData(string $file, array $variables) {
+    function getCurl(
+        array $header,
+        string $data,
+        string $url = '127.0.0.1:21727/auth/login'
+    ) {
+        $curl = curl_init();
+        curl_setopt_array(
+            $curl,
+            [
+                CURLOPT_URL => $url,
+                CURLOPT_HTTPHEADER => $header,
+                CURLOPT_POST => true,
+                CURLOPT_POSTFIELDS => $data,
+                CURLOPT_RETURNTRANSFER => true,
+            ]
+        );
+        $result  = curl_exec($curl);
+        curl_close($curl);
+        return $result;
+    }
+
+    $casInfos = [
+        'url' => $GLOBALS['credentials']['url_pronote'],
+        'username' => $GLOBALS['credentials']['username'],
+        'password' => $GLOBALS['credentials']['password'],
+        'cas' => $GLOBALS['credentials']['cas']
+    ];
+
+    $token = getCurl(
+        [
+            'Content-Type: application/json'
+        ],
+        json_encode($casInfos),
+        '127.0.0.1:21727/auth/login'
+    );
+
+    $request = '{"query":"' . file_get_contents('../graphqlData/' . $file . '.graphql') ?? file_get_contents('../graphqlData/schema.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
+
+    $data = getCurl(
+        [
+            'Content-Type: application/json',
+            'token:' . json_decode($token, true)['token']
+        ],
+        $request
+    );
+    return $data;
 }

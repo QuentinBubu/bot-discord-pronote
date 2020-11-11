@@ -1,1 +1,1 @@
-query timetable($timetableFrom:Date,$timetableTo:Date){timetable(from:$timetableFrom,to:$timetableTo){from,to,subject,teacher,room,status,isCancelled}}
+query variable($timetableFrom:Date,$timetableTo:Date){timetable(from:$timetableFrom,to:$timetableTo){from,to,subject,teacher,room,status,isCancelled}}

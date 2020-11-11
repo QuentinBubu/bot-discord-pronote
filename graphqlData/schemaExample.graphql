@@ -33,6 +33,7 @@ type Lesson {
     isAway: Boolean
     isCancelled: Boolean
     color: String
+    remoteLesson: Boolean
 }
 
 type Marks {
@@ -189,6 +190,8 @@ type Homework {
 }
 
 type File {
+    time: String!
+    subject: String!
     name: String!
     url: String!
 }
@@ -452,7 +455,6 @@ type PronoteTab {
     id: Int!
     subs: [PronoteTab!]!
 }
-
 """
 parent.graphql file
 """

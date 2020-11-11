@@ -2,9 +2,9 @@
 
 header('Content-Type application/json');
 
-require 'credentials.php';
+require '../credentials.php';
 
-function getCurl($header, $url, $data) {
+function getCurl($header, $url, $data, $credentials) {
     $curl = curl_init();
     curl_setopt_array(
         $curl,
@@ -22,10 +22,10 @@ function getCurl($header, $url, $data) {
 }
 
 $casInfos = [
-    'url' => $url_pronote,
-    'username' => $username,
-    'password' => $password,
-    'cas' => $cas
+    'url' => $credentials['url_pronote'],
+    'username' => $credentials['username'],
+    'password' => $credentials['password'],
+    'cas' => $credentials['cas']
 ];
 
 $token = getCurl(

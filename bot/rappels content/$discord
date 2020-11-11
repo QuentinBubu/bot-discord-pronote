@@ -1,0 +1,21 @@
+object(Discord\DiscordCommandClient)#3 (9) {
+  ["token"]=>
+  string(5) "*****"
+  ["loggerLevel"]=>
+  int(200)
+  ["logging"]=>
+  bool(true)
+  ["loadAllMembers"]=>
+  bool(false)
+  ["disabledEvents"]=>
+  array(0) {
+  }
+  ["pmChannels"]=>
+  bool(false)
+  ["storeMessages"]=>
+  bool(false)
+  ["retrieveBans"]=>
+  bool(false)
+  ["intents"]=>
+  bool(false)
+}

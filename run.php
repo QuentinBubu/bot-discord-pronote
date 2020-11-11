@@ -5,19 +5,24 @@ require __DIR__ . '/credentials.php';
 require __DIR__ . '/bot/MyFunctions.php';
 require __DIR__ . '/bot/message.php';
 require __DIR__ . '/bot/globalArray.php';
-// require __DIR__ . '/index.php';
 require __DIR__ . '/bot/periodicFetch.php';
+require __DIR__ . '/bot/init.php';
 
 use Discord\DiscordCommandClient;
-use Illuminate\Support\Facades\Date;
 
 $discord = new DiscordCommandClient([
-  'token' => $tokenBot,
+  'token' => $credentials['tokenBot'],
   'prefix' => 'pronote ',
 ]);
 
 $discord->on('ready', function ($discord) {
     echo "Bot is ready.", PHP_EOL;
+
+    //initConfiguration($discord);
+
+    updateRichPresence($discord);
+    //periodicFetch($discord);
+
     $discord->on('message', function ($message) {
         echo "Recieved a message from {$message->author->username}: {$message->content}", PHP_EOL;
         newMessage($message);
@@ -27,9 +32,9 @@ $discord->on('ready', function ($discord) {
         updateRichPresence($discord);
     });
 
-    $discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
-        $date = new Date('now');
-    });
+    //$discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
+    //    periodicFetch($discord);
+    //});
 });
 
 /*$game = $discord->factory(Game::class, [
@@ -66,16 +71,12 @@ $discord->registerCommand('ping', function () {
     return 'pong!';
 },
 [
-    'description' => 'pong!',
+    'aliases' => $GLOBALS['data']['prefix']
 ]
 );
 
 // $discord->registerCommand('', ['hey', 'hello'], ['aliases' => ['1', '2', '3']]);
 
 // $discord->guilds[741229545579085876]->channels[774948551217119232]->sendMessage('Hello!', false);
-
-
-
-
 
 $discord->run();
