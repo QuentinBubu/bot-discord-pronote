@@ -1,0 +1,138 @@
+[CMD:
+    $guild   = $discord->guilds->first();
+    $channel = $guild->channels->get('name', 'Minecraft');
+]
+
+
+object(Discord\Parts\Channel\Channel)#919 (19) {
+  ["id"]=>
+  string(18) "741987594576986112"
+  ["name"]=>
+  string(9) "Minecraft"
+  ["type"]=>
+  int(2)
+  ["topic"]=>
+  NULL
+  ["guild_id"]=>
+  string(18) "741229545579085876"
+  ["position"]=>
+  int(41)
+  ["is_private"]=>
+  bool(false)
+  ["last_message_id"]=>
+  NULL
+  ["permission_overwrites"]=>
+  array(6) {
+    [0]=>
+    object(stdClass)#250 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741229545579085876"
+      ["deny_new"]=>
+      string(7) "1048576"
+      ["deny"]=>
+      int(1048576)
+      ["allow_new"]=>
+      string(1) "0"
+      ["allow"]=>
+      int(0)
+    }
+    [1]=>
+    object(stdClass)#235 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741229545738469386"
+      ["deny_new"]=>
+      string(1) "0"
+      ["deny"]=>
+      int(0)
+      ["allow_new"]=>
+      string(7) "1048576"
+      ["allow"]=>
+      int(1048576)
+    }
+    [2]=>
+    object(stdClass)#130 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741229545738469387"
+      ["deny_new"]=>
+      string(1) "0"
+      ["deny"]=>
+      int(0)
+      ["allow_new"]=>
+      string(7) "1048576"
+      ["allow"]=>
+      int(1048576)
+    }
+    [3]=>
+    object(stdClass)#239 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741229545738469388"
+      ["deny_new"]=>
+      string(1) "0"
+      ["deny"]=>
+      int(0)
+      ["allow_new"]=>
+      string(7) "1048576"
+      ["allow"]=>
+      int(1048576)
+    }
+    [4]=>
+    object(stdClass)#240 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741273488538468362"
+      ["deny_new"]=>
+      string(7) "2097152"
+      ["deny"]=>
+      int(2097152)
+      ["allow_new"]=>
+      string(1) "0"
+      ["allow"]=>
+      int(0)
+    }
+    [5]=>
+    object(stdClass)#234 (6) {
+      ["type"]=>
+      string(4) "role"
+      ["id"]=>
+      string(18) "741985238607069184"
+      ["deny_new"]=>
+      string(1) "0"
+      ["deny"]=>
+      int(0)
+      ["allow_new"]=>
+      string(7) "1048576"
+      ["allow"]=>
+      int(1048576)
+    }
+  }
+  ["bitrate"]=>
+  int(64000)
+  ["recipients"]=>
+  object(Discord\Helpers\Collection)#1142 (0) {
+  }
+  ["nsfw"]=>
+  NULL
+  ["user_limit"]=>
+  int(0)
+  ["rate_limit_per_user"]=>
+  NULL
+  ["icon"]=>
+  NULL
+  ["owner_id"]=>
+  NULL
+  ["application_id"]=>
+  NULL
+  ["parent_id"]=>
+  string(18) "741229546019356705"
+  ["last_pin_timestamp"]=>
+  NULL
+}

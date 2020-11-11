@@ -1,0 +1,1307 @@
+Discord\Repository\GuildRepository Object
+(
+    [741229545579085876] => Discord\Parts\Guild\Guild Object
+        (
+            [id] => 741229545579085876
+            [name] => Pépouze
+            [icon] => https://cdn.discordapp.com/icons/741229545579085876/017fb5748cec83b80bedb7921f3eb48b.jpg?size=1024
+            [region] => europe
+            [owner_id] => 638351262827675661
+            [roles] => Discord\Repository\Guild\RoleRepository Object
+                (
+                    [741229545579085876] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085876
+                            [name] => @everyone
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 0
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545579085877] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085877
+                            [name] => Lieutenant de la Tortue et de ses adjoints
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 4
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37080640
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545579085879] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085879
+                            [name] => sportif
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 14
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545579085882] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085882
+                            [name] => JeuxSociété
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 15
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545579085883] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085883
+                            [name] => Numérique
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 16
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545579085884] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545579085884
+                            [name] => Membres
+                            [color] => 11370178
+                            [managed] =>
+                            [hoist] => 1
+                            [position] => 17
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37080640
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545738469386] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545738469386
+                            [name] => Modérateurs
+                            [color] => 2474073
+                            [managed] =>
+                            [hoist] => 1
+                            [position] => 21
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] => 1
+                                    [manage_webhooks] => 1
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] => 1
+                                    [manage_messages] => 1
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] => 1
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] => 1
+                                    [deafen_members] => 1
+                                    [move_members] => 1
+                                    [use_vad] => 1
+                                    [kick_members] => 1
+                                    [ban_members] => 1
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] => 1
+                                    [manage_nicknames] => 1
+                                    [manage_emojis] => 1
+                                    [bitwise] => 2146958918
+                                )
+
+                            [mentionable] => 1
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545738469387] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545738469387
+                            [name] => Bots
+                            [color] => 7317982
+                            [managed] =>
+                            [hoist] => 1
+                            [position] => 23
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] => 1
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] => 1
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] => 1
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 104320577
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741229545738469388] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741229545738469388
+                            [name] => Gérants
+                            [color] => 14286926
+                            [managed] =>
+                            [hoist] => 1
+                            [position] => 24
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] => 1
+                                    [manage_channels] => 1
+                                    [view_channel] => 1
+                                    [manage_roles] => 1
+                                    [manage_webhooks] => 1
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] => 1
+                                    [manage_messages] => 1
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] => 1
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] => 1
+                                    [deafen_members] => 1
+                                    [move_members] => 1
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] => 1
+                                    [administrator] => 1
+                                    [manage_guild] => 1
+                                    [view_audit_log] => 1
+                                    [view_guild_insights] =>
+                                    [change_nickname] => 1
+                                    [manage_nicknames] => 1
+                                    [manage_emojis] => 1
+                                    [bitwise] => 2146959101
+                                )
+
+                            [mentionable] => 1
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741230148476469300] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741230148476469300
+                            [name] => MEE6
+                            [color] => 0
+                            [managed] => 1
+                            [hoist] =>
+                            [position] => 2
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] => 1
+                                    [manage_channels] => 1
+                                    [view_channel] => 1
+                                    [manage_roles] => 1
+                                    [manage_webhooks] => 1
+                                    [add_reactions] => 1
+                                    [send_messages] => 1
+                                    [send_tts_messages] =>
+                                    [manage_messages] => 1
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] => 1
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] => 1
+                                    [ban_members] => 1
+                                    [administrator] => 1
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] => 1
+                                    [bitwise] => 1916267615
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741230260712112170] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741230260712112170
+                            [name] => carl-bot
+                            [color] => 0
+                            [managed] => 1
+                            [hoist] =>
+                            [position] => 13
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] => 1
+                                    [manage_channels] => 1
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] =>
+                                    [send_messages] => 1
+                                    [send_tts_messages] => 1
+                                    [manage_messages] => 1
+                                    [embed_links] => 1
+                                    [attach_files] => 1
+                                    [read_message_history] => 1
+                                    [mention_everyone] => 1
+                                    [use_external_emojis] =>
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] => 1
+                                    [deafen_members] => 1
+                                    [move_members] => 1
+                                    [use_vad] => 1
+                                    [kick_members] => 1
+                                    [ban_members] => 1
+                                    [administrator] => 1
+                                    [manage_guild] => 1
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 66321471
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741230769732714587] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741230769732714587
+                            [name] => Not a Bot
+                            [color] => 0
+                            [managed] => 1
+                            [hoist] =>
+                            [position] => 3
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] =>
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] =>
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] =>
+                                    [mention_everyone] =>
+                                    [use_external_emojis] =>
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] =>
+                                    [speak] =>
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] =>
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] => 1
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 8
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741268091161542667] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741268091161542667
+                            [name] => Dyno
+                            [color] => 0
+                            [managed] => 1
+                            [hoist] =>
+                            [position] => 1
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] => 1
+                                    [manage_channels] => 1
+                                    [view_channel] => 1
+                                    [manage_roles] => 1
+                                    [manage_webhooks] => 1
+                                    [add_reactions] =>
+                                    [send_messages] => 1
+                                    [send_tts_messages] =>
+                                    [manage_messages] => 1
+                                    [embed_links] => 1
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] => 1
+                                    [use_vad] => 1
+                                    [kick_members] => 1
+                                    [ban_members] => 1
+                                    [administrator] => 1
+                                    [manage_guild] => 1
+                                    [view_audit_log] => 1
+                                    [view_guild_insights] =>
+                                    [change_nickname] => 1
+                                    [manage_nicknames] => 1
+                                    [manage_emojis] => 1
+                                    [bitwise] => 2134207679
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741273488538468362] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741273488538468362
+                            [name] => Muted
+                            [color] => 8487814
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 22
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] =>
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] =>
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] =>
+                                    [mention_everyone] =>
+                                    [use_external_emojis] =>
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] =>
+                                    [speak] =>
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] =>
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 0
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741985238607069184] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741985238607069184
+                            [name] => Minecraft
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 12
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741985316876976208] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741985316876976208
+                            [name] => Roblox
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 11
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741995882764828723] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741995882764828723
+                            [name] => Bricolage
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 10
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [741999278154842203] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 741999278154842203
+                            [name] => Aide aux devoirs
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 9
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [743544223390892073] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 743544223390892073
+                            [name] => Automobile
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 8
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [743547356439380150] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 743547356439380150
+                            [name] => Marron
+                            [color] => 11429888
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 18
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [743547858984239235] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 743547858984239235
+                            [name] => Rose
+                            [color] => 13323728
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 19
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [743548220281454622] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 743548220281454622
+                            [name] => Bleu
+                            [color] => 2588365
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 20
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [745026953475522740] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 745026953475522740
+                            [name] => Clash Of Clans
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 7
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [745027628573917307] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 745027628573917307
+                            [name] => Ainés
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 5
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [745027687290241146] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 745027687290241146
+                            [name] => Chefs adjoints
+                            [color] => 0
+                            [managed] =>
+                            [hoist] =>
+                            [position] => 6
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] => 1
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] => 1
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] => 1
+                                    [mention_everyone] =>
+                                    [use_external_emojis] => 1
+                                    [priority_speaker] =>
+                                    [stream] => 1
+                                    [connect] => 1
+                                    [speak] => 1
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] => 1
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] =>
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 37029440
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                    [774948452278468612] => Discord\Parts\Guild\Role Object
+                        (
+                            [id] => 774948452278468612
+                            [name] => pronote-bot
+                            [color] => 0
+                            [managed] => 1
+                            [hoist] =>
+                            [position] => 1
+                            [permissions] => Discord\Parts\Permissions\RolePermission Object
+                                (
+                                    [create_instant_invite] =>
+                                    [manage_channels] =>
+                                    [view_channel] =>
+                                    [manage_roles] =>
+                                    [manage_webhooks] =>
+                                    [add_reactions] =>
+                                    [send_messages] =>
+                                    [send_tts_messages] =>
+                                    [manage_messages] =>
+                                    [embed_links] =>
+                                    [attach_files] =>
+                                    [read_message_history] =>
+                                    [mention_everyone] =>
+                                    [use_external_emojis] =>
+                                    [priority_speaker] =>
+                                    [stream] =>
+                                    [connect] =>
+                                    [speak] =>
+                                    [mute_members] =>
+                                    [deafen_members] =>
+                                    [move_members] =>
+                                    [use_vad] =>
+                                    [kick_members] =>
+                                    [ban_members] =>
+                                    [administrator] => 1
+                                    [manage_guild] =>
+                                    [view_audit_log] =>
+                                    [view_guild_insights] =>
+                                    [change_nickname] =>
+                                    [manage_nicknames] =>
+                                    [manage_emojis] =>
+                                    [bitwise] => 8
+                                )
+
+                            [mentionable] =>
+                            [guild_id] => 741229545579085876
+                        )
+
+                )
+
+            [joined_at] => 2020-11-08T10:48:28Z
+            [afk_channel_id] => 741229546682056728
+            [afk_timeout] => 900
+            [embed_enabled] =>
+            [embed_channel_id] =>
+            [features] => Array
+                (
+                )
+
+            [splash] =>
+            [discovery_splash] =>
+            [emojis] => Discord\Repository\Guild\EmojiRepository Object
+                (
+                )
+
+            [large] =>
+            [verification_level] => 1
+            [member_count] => 10
+            [default_message_notifications] => 1
+            [explicit_content_filter] => 1
+            [mfa_level] => 0
+            [application_id] =>
+            [widget_enabled] =>
+            [widget_channel_id] =>
+            [system_channel_id] => 741229546233266255
+            [system_channel_flags] => 0
+            [rules_channel_id] =>
+            [voice_states] => Array
+                (
+                )
+
+            [max_presences] =>
+            [max_members] => 100000
+            [vanity_url_code] =>
+            [description] =>
+            [banner] =>
+            [premium_tier] => 0
+            [premium_subscription_count] => 0
+            [preferred_locale] => en-US
+            [public_updates_channel_id] =>
+            [max_video_channel_users] => 25
+            [approximate_member_count] =>
+            [approximate_presence_count] =>
+        )
+
+)
