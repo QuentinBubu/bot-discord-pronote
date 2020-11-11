@@ -37,6 +37,16 @@ $GLOBALS['data']['commands'] = [
             'Name' => 'addPrefix',
             'Description' => 'Command for add bot prefix',
             'Usage' => '`pronote addPrefix PREFIX`'
+        ],
+        'init' => [
+            'Name' => 'init',
+            'Description' => 'Command for init bot',
+            'Usage' => '`pronote init`'
+        ],
+        'serverInformation' => [
+            'Name' => 'serverInformation',
+            'Description' => 'Command for get server information',
+            'Usage' => '`pronote serverInformation`'
         ]
     ]
 ];

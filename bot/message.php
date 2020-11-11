@@ -60,7 +60,8 @@ function newMessage(&$message, &$discord) {
             break;
 
             case 'serverInformation';
-                $message->reply("```json\n{$GLOBALS['data']['server']}\n```", false);
+                $text = json_encode($GLOBALS['data']['server'], JSON_PRETTY_PRINT);
+                $message->reply("```json\n{$text}\n```", false);
             break;
 
             default;
