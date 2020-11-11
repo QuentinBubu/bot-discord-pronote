@@ -3,7 +3,7 @@
 require_once 'commands/notification.php';
 require_once 'commands/server.php';
 
-function newMessage(&$message) {
+function newMessage(&$message, &$discord) {
     if (
         in_array($message->content[0], $GLOBALS['data']['prefix'])
         || in_array(explode(' ', $message->content)[0], $GLOBALS['data']['prefix'])
@@ -49,6 +49,18 @@ function newMessage(&$message) {
 
             case 'addPrefix';
                 addPrefix($message, $details['value']);
+            break;
+
+            case 'init';
+                if ($GLOBALS['data']['notification']['channel'] === null) {
+                    $GLOBALS['data']['notification']['channel'] = $message->channel_id;
+                    $guild   = $discord->guilds->first();
+                    $GLOBALS['data']['server']['serverId'] = $guild->channels->get('id', "{$GLOBALS['data']['notification']['channel']}")->guild_id;
+                }
+            break;
+
+            case 'serverInformation';
+                $message->reply("```json\n{$GLOBALS['data']['server']}\n```", false);
             break;
 
             default;

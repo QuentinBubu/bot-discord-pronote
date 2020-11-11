@@ -27,9 +27,9 @@ $discord->on('ready', function ($discord) {
 
     //periodicFetch($discord);
 
-    $discord->on('message', function ($message) {
+    $discord->on('message', function ($message, $discord) {
         echo "Recieved a message from {$message->author->username}: {$message->content}", PHP_EOL;
-        newMessage($message);
+        newMessage($message, $discord);
     });
 
     $discord->loop->addPeriodicTimer(60, function () use ($discord) {
@@ -37,10 +37,6 @@ $discord->on('ready', function ($discord) {
             updateRichPresence($discord);
         }
     });
-
-    $guild   = $discord->guilds->first();
-    $channel = $guild->channels->get('id', '774948551217119232');
-    var_dump($channel);
 
     //$discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
     //    periodicFetch($discord);
