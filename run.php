@@ -16,7 +16,6 @@ $discord = new DiscordCommandClient([
 ]);
 
 $discord->on('ready', function ($discord) {
-
     echo "Bot is ready.", PHP_EOL;
 
     $activity = $discord->factory(Activity::class, [
@@ -25,7 +24,11 @@ $discord->on('ready', function ($discord) {
     ]);
     $discord->updatePresence($activity, false, 'online', false);
 
-    //periodicFetch($discord);
+    $discord->loop->addPeriodicTimer(60, function () use ($discord) {
+        if ($GLOBALS['data']['server']['serverId'] !== null) {
+            periodicFetch($discord);
+        }
+    });
 
     $discord->on('message', function ($message, $discord) {
         echo "Recieved a message from {$message->author->username}: {$message->content}", PHP_EOL;
@@ -38,15 +41,17 @@ $discord->on('ready', function ($discord) {
         }
     });
 
-    //$discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
-    //    periodicFetch($discord);
-    //});
+    $discord->loop->addPeriodicTimer(60*31, function () use ($discord) {
+        periodicFetch($discord);
+    });
 });
 
-$discord->registerCommand('ping', function () {
+$discord->registerCommand(
+    'ping',
+    function () {
     return 'pong!';
 },
-[
+    [
     'aliases' => $GLOBALS['data']['prefix']
 ]
 );

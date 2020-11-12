@@ -16,7 +16,8 @@ function updateRichPresence(&$discord) {
         'fusionner 2 zéros',
         'préfixes: ' . json_encode($GLOBALS['data']['prefix']),
         'help: &help',
-        'help: pronote help'
+        'help: pronote help',
+        'Créateur: Quentin_bubu'
         ];
     $activity = $discord->factory(Activity::class, [
         'type' => Activity::TYPE_PLAYING,
@@ -25,27 +26,28 @@ function updateRichPresence(&$discord) {
     $discord->updatePresence($activity, false, 'online', false);
 }
 
+function getCurl(
+    array $header,
+    string $data,
+    string $url = '127.0.0.1:21727/auth/login'
+) {
+    $curl = curl_init();
+    curl_setopt_array(
+        $curl,
+        [
+            CURLOPT_URL => $url,
+            CURLOPT_HTTPHEADER => $header,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_RETURNTRANSFER => true,
+        ]
+    );
+    $result  = curl_exec($curl);
+    curl_close($curl);
+    return $result;
+}
+
 function getData(string $file, array $variables) {
-    function getCurl(
-        array $header,
-        string $data,
-        string $url = '127.0.0.1:21727/auth/login'
-    ) {
-        $curl = curl_init();
-        curl_setopt_array(
-            $curl,
-            [
-                CURLOPT_URL => $url,
-                CURLOPT_HTTPHEADER => $header,
-                CURLOPT_POST => true,
-                CURLOPT_POSTFIELDS => $data,
-                CURLOPT_RETURNTRANSFER => true,
-            ]
-        );
-        $result  = curl_exec($curl);
-        curl_close($curl);
-        return $result;
-    }
 
     $casInfos = [
         'url' => $GLOBALS['credentials']['url_pronote'],
@@ -62,7 +64,7 @@ function getData(string $file, array $variables) {
         '127.0.0.1:21727/auth/login'
     );
 
-    $request = '{"query":"' . file_get_contents('../graphqlData/' . $file . '.graphql') ?? file_get_contents('../graphqlData/schema.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
+    $request = '{"query":"' . file_get_contents(__DIR__ . '/../graphqlData/' . $file . '.graphql') ?? file_get_contents(__DIR__ . '/../graphqlData/schema.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
 
     $data = getCurl(
         [
