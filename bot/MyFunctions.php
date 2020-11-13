@@ -66,6 +66,8 @@ function getData(string $file, array $variables) {
 
     $request = '{"query":"' . file_get_contents(__DIR__ . '/../graphqlData/' . $file . '.graphql') ?? file_get_contents(__DIR__ . '/../graphqlData/schema.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
 
+    echo $request;
+
     $data = getCurl(
         [
             'Content-Type: application/json',
