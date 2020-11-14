@@ -13,6 +13,8 @@ function updateRichPresence(&$discord) {
         'observer',
         'voler avec ses papillons',
         'se démonter',
+        'essayer de diviser par 0',
+        'mettre des bas coefficients sur des bonnes notes',
         'fusionner 2 zéros',
         'préfixes: ' . json_encode($GLOBALS['data']['prefix']),
         'help: &help',
@@ -29,7 +31,7 @@ function updateRichPresence(&$discord) {
 function getCurl(
     array $header,
     string $data,
-    string $url = '127.0.0.1:21727/auth/login'
+    string $url = '127.0.0.1:21727/graphql'
 ) {
     $curl = curl_init();
     curl_setopt_array(
@@ -64,9 +66,7 @@ function getData(string $file, array $variables) {
         '127.0.0.1:21727/auth/login'
     );
 
-    $request = '{"query":"' . file_get_contents(__DIR__ . '/../graphqlData/' . $file . '.graphql') ?? file_get_contents(__DIR__ . '/../graphqlData/schema.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
-
-    echo $request;
+    $request = '{"query":"' . file_get_contents(__DIR__ . '/../graphqlData/' . $file . '.graphql') .'",'. substr(json_encode($variables), 1, -1) .',"operationName":"variable"}';
 
     $data = getCurl(
         [

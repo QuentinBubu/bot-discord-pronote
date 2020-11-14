@@ -3,7 +3,9 @@
 $GLOBALS['data'] = [];
 
 $GLOBALS['data']['notification'] = [
-    'channel' => null
+    'channel' => null,
+    'everyone' => false,
+    'here' => false
 ];
 
 $GLOBALS['data']['prefix'] = [
@@ -27,6 +29,16 @@ $GLOBALS['data']['commands'] = [
             'Name' => 'setNotificationChannel',
             'Description' => 'Command set channel where pronote informations will be send',
             'Usage' => '`pronote setNotificationChannel CHANNEL_ID`'
+        ],
+        'setNotificationEveryone' => [
+            'Name' => 'setNotificationEveryone',
+            'Description' => 'Command for set if you would ping everyone. It\'s here or everyone',
+            'Usage' => '`pronote setNotificationEveryone true or false`'
+        ],
+        'setNotificationHere' => [
+            'Name' => 'setNotificationHere',
+            'Description' => 'Command for set if you would ping here. It\'s here or everyone',
+            'Usage' => '`pronote setNotificationEveryone true or false`'
         ],
         'setServerId' => [
             'Name' => 'setServerId',

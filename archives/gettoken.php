@@ -4,7 +4,7 @@ header('Content-Type application/json');
 
 require '../credentials.php';
 
-function getCurl($header, $url, $data, $credentials) {
+function getCurl($header, $url, $data) {
     $curl = curl_init();
     curl_setopt_array(
         $curl,

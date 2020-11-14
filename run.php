@@ -15,6 +15,8 @@ $discord = new DiscordCommandClient([
   'prefix' => 'pronote ',
 ]);
 
+# CHANGE L'HEURE 
+
 $discord->on('ready', function ($discord) {
     echo "Bot is ready.", PHP_EOL;
 
@@ -24,7 +26,7 @@ $discord->on('ready', function ($discord) {
     ]);
     $discord->updatePresence($activity, false, 'online', false);
 
-    $discord->loop->addPeriodicTimer(60, function () use ($discord) {
+    $discord->loop->addPeriodicTimer(30, function () use ($discord) {
         if ($GLOBALS['data']['server']['serverId'] !== null) {
             periodicFetch($discord);
         }

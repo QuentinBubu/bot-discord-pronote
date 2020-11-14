@@ -34,6 +34,14 @@ function newMessage(&$message, &$discord) {
                 setNotificationChannel($message, $details['value']);
             break;
 
+            case 'setNotificationEveryone';
+                setNotificationEveryone($message, $details['value']);
+            break;
+
+            case 'setNotificationHere';
+                setNotificationHere($message, $details['value']);
+            break;
+
             case 'notificationInformation';
                 $text = json_encode(notificationInformation(), JSON_PRETTY_PRINT);
                 $message->reply("```json\n{$text}\n```", false);
