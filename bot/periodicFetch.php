@@ -14,7 +14,7 @@ function periodicFetch($discord) {
     if ($date->format('H') >= '7' && $date->format('H') < '8') {
         $sendMessage = getMenu('-1 day', 'now');
         $sendMessage .= "\n\n";
-        $sendMessage .= getTimetable('+0 day', '+1 day');
+        $sendMessage .= getTimetable('now', '+1 day');
     }
 
     if ($date->format('H') >= '20' && $date->format('H') < '21') {
