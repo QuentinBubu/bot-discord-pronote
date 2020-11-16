@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/commands/getTimetable.php';
+require_once __DIR__ . '/commands/getMenu.php';
+
 use DateTime;
 use DateTimeZone;
 
@@ -9,10 +12,12 @@ function periodicFetch($discord) {
     $sendMessage = null;
 
     if ($date->format('H') >= '7' && $date->format('H') < '8') {
-        $sendMessage = getTimetable('+0 day', '+1 day');
+        $sendMessage = getMenu('-1 day', 'now');
+        $sendMessage .= "\n\n";
+        $sendMessage .= getTimetable('+0 day', '+1 day');
     }
 
-    if ($date->format('H') >= '22' && $date->format('H') < '23') {
+    if ($date->format('H') >= '20' && $date->format('H') < '21') {
         $sendMessage = getTimetable('+1 day', '+2 days');
     }
 
@@ -28,31 +33,5 @@ function periodicFetch($discord) {
         $discord->guilds[$GLOBALS['data']['server']['serverId']]->channels[$GLOBALS['data']['notification']['channel']]->sendMessage('@everyone', false);
     } elseif ($GLOBALS['data']['notification']['here']) {
         $discord->guilds[$GLOBALS['data']['server']['serverId']]->channels[$GLOBALS['data']['notification']['channel']]->sendMessage('@here', false);
-    }
-}
-
-function getTimetable($from, $to) {
-    $courses = getData(
-        'getCourses',
-        [
-            'variables' => [
-                'timetableFrom' => date('Y-m-d', strtotime($from)),
-                'timetableTo' => date('Y-m-d', strtotime($to))
-            ]
-        ]
-    );
-
-    $courses = json_decode($courses, true);
-
-    $sendMessage = "Prochains cours:\n";
-    foreach ($courses['data']['timetable'] as $value) {
-        if (!$value['isCancelled']) {
-            if ($value['status'] == null) {
-                $value['status'] = 'aucun';
-            }
-
-            $sendMessage .= "*De " . date('H\hi', $value['from']/1000) . " à " . date('H\hi', $value['to']/1000) . "*\nCours de " . $value['subject'] . " avec " . $value['teacher'] . " en salle " . $value['room'] . ".\nStatut particulier: " . $value['status'];
-            $sendMessage .= "\n\n-----\n\n";
-        }
     }
 }

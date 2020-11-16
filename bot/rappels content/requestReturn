@@ -1,0 +1,145 @@
+array(1) {
+  ["data"]=>
+  array(1) {
+    ["timetable"]=>
+    array(4) {
+      [0]=>
+      array(7) {
+        ["from"]=>
+        int(1605600000000)
+        ["to"]=>
+        int(1605603600000)
+        ["subject"]=>
+        string(11) "ANGLAIS LV1"
+        ["teacher"]=>
+        string(13) "BARTOLOZZI S."
+        ["room"]=>
+        string(12) "E209 Anglais"
+        ["status"]=>
+        NULL
+        ["isCancelled"]=>
+        bool(false)
+      }
+      [1]=>
+      array(7) {
+        ["from"]=>
+        int(1605603600000)
+        ["to"]=>
+        int(1605610800000)
+        ["subject"]=>
+        string(8) "FRANCAIS"
+        ["teacher"]=>
+        string(19) "BEAUME DUMAILLET V."
+        ["room"]=>
+        string(14) "E301 Français"
+        ["status"]=>
+        NULL
+        ["isCancelled"]=>
+        bool(false)
+      }
+      [2]=>
+      array(7) {
+        ["from"]=>
+        int(1605618000000)
+        ["to"]=>
+        int(1605621600000)
+        ["subject"]=>
+        string(12) "ESPAGNOL LVB"
+        ["teacher"]=>
+        string(9) "RILLET A."
+        ["room"]=>
+        string(13) "E306 Espagnol"
+        ["status"]=>
+        NULL
+        ["isCancelled"]=>
+        bool(false)
+      }
+      [3]=>
+      array(7) {
+        ["from"]=>
+        int(1605625200000)
+        ["to"]=>
+        int(1605632400000)
+        ["subject"]=>
+        string(16) "NUM. SC.INFO. HE"
+        ["teacher"]=>
+        string(9) "BARRET P."
+        ["room"]=>
+        string(19) "Lycée du Dauphiné"
+        ["status"]=>
+        NULL
+        ["isCancelled"]=>
+        bool(false)
+      }
+    }
+  }
+}
+
+int(0)
+array(7) {
+  ["from"]=>
+  int(1605600000000)
+  ["to"]=>
+  int(1605603600000)
+  ["subject"]=>
+  string(11) "ANGLAIS LV1"
+  ["teacher"]=>
+  string(13) "BARTOLOZZI S."
+  ["room"]=>
+  string(12) "E209 Anglais"
+  ["status"]=>
+  NULL
+  ["isCancelled"]=>
+  bool(false)
+}
+---------int(1)
+array(7) {
+  ["from"]=>
+  int(1605603600000)
+  ["to"]=>
+  int(1605610800000)
+  ["subject"]=>
+  string(8) "FRANCAIS"
+  ["teacher"]=>
+  string(19) "BEAUME DUMAILLET V."
+  ["room"]=>
+  string(14) "E301 Français"
+  ["status"]=>
+  NULL
+  ["isCancelled"]=>
+  bool(false)
+}
+---------int(2)
+array(7) {
+  ["from"]=>
+  int(1605618000000)
+  ["to"]=>
+  int(1605621600000)
+  ["subject"]=>
+  string(12) "ESPAGNOL LVB"
+  ["teacher"]=>
+  string(9) "RILLET A."
+  ["room"]=>
+  string(13) "E306 Espagnol"
+  ["status"]=>
+  NULL
+  ["isCancelled"]=>
+  bool(false)
+}
+---------int(3)
+array(7) {
+  ["from"]=>
+  int(1605625200000)
+  ["to"]=>
+  int(1605632400000)
+  ["subject"]=>
+  string(16) "NUM. SC.INFO. HE"
+  ["teacher"]=>
+  string(9) "BARRET P."
+  ["room"]=>
+  string(19) "Lycée du Dauphiné"
+  ["status"]=>
+  NULL
+  ["isCancelled"]=>
+  bool(false)
+}

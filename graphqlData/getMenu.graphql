@@ -1,0 +1,1 @@
+query variables($menuFrom:Date,$menuTo:Date){menu(from:$menuFrom,to:$menuTo){date,meals{name,labels{name}}}}
