@@ -12,13 +12,13 @@ function periodicFetch($discord) {
     $sendMessage = null;
 
     if ($date->format('H') >= '7' && $date->format('H') < '8') {
-        $sendMessage = getMenu('-1 day', 'now');
+        $sendMessage .= getMenu('-1 day', 'now');
         $sendMessage .= "\n\n";
         $sendMessage .= getTimetable('now', '+1 day');
     }
 
     if ($date->format('H') >= '20' && $date->format('H') < '21') {
-        $sendMessage = getTimetable('+1 day', '+2 days');
+        $sendMessage .= getTimetable('+1 day', '+2 days');
     }
 
     if ($sendMessage === null) {

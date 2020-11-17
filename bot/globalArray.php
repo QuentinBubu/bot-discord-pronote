@@ -5,7 +5,9 @@ $GLOBALS['data'] = [];
 $GLOBALS['data']['notification'] = [
     'channel' => null,
     'everyone' => false,
-    'here' => false
+    'here' => false,
+    'menu' => true,
+    'timetable' => true
 ];
 
 $GLOBALS['data']['prefix'] = [
@@ -14,11 +16,16 @@ $GLOBALS['data']['prefix'] = [
 ];
 
 $GLOBALS['data']['commands'] = [
-    'Commands informations' => [
+    'Commands_informations' => [
+        'commandList' => [
+            'Name' => 'commandList',
+            'Description' => 'Command who send all commands',
+            'Usage' => '`pronote commandList`'
+        ],
         'help' => [
             'Name' => 'help',
             'Description' => 'Command help you with others commands',
-            'Usage' => '`pronote help`'
+            'Usage' => '`pronote help command`'
         ],
         'notificationInformation' => [
             'Name' => 'notificationInformation',
@@ -59,7 +66,27 @@ $GLOBALS['data']['commands'] = [
             'Name' => 'serverInformation',
             'Description' => 'Command for get server information',
             'Usage' => '`pronote serverInformation`'
-        ]
+        ],
+        'setEchoMenu' => [
+            'Name' => 'setEchoMenu',
+            'Description' => 'Command for set if you would of menu was send or not',
+            'Usage' => '`pronote setEchoMenu true/false`'
+        ],
+        'setEchoTimetable' => [
+            'Name' => 'setEchoTimetable',
+            'Description' => 'Command for set if you would of timetable was send or not',
+            'Usage' => '`pronote setEchoTimetable true/false`'
+        ],
+        'getMenu' => [
+            'Name' => 'getMenu',
+            'Description' => 'Command for send today menu',
+            'Usage' => '`pronote getMenu`'
+        ],
+        'getTimetable' => [
+            'Name' => 'getTimetable',
+            'Description' => 'Command for send today timetable',
+            'Usage' => '`pronote getTimetable`'
+        ],
     ]
 ];
 

@@ -2,6 +2,8 @@
 
 require_once 'commands/notification.php';
 require_once 'commands/server.php';
+require_once 'commands/getMenu.php';
+require_once 'commands/getTimetable.php';
 
 function newMessage(&$message, &$discord) {
     if (
@@ -25,8 +27,13 @@ function newMessage(&$message, &$discord) {
 
         switch ($details['command']) {
 
+            case 'commandList';
+                $text = json_encode($GLOBALS['data']['commands']['Commands_informations'], JSON_PRETTY_PRINT);
+                $message->reply("```json\n{$text}\n```", false);
+            break;
+
             case 'help';
-                $text = json_encode($GLOBALS['data']['commands'], JSON_PRETTY_PRINT);
+                $text = json_encode($GLOBALS['data']['commands']['Commands_informations'][$details['value']], JSON_PRETTY_PRINT);
                 $message->reply("```json\n{$text}\n```", false);
             break;
 
@@ -70,6 +77,22 @@ function newMessage(&$message, &$discord) {
             case 'serverInformation';
                 $text = json_encode($GLOBALS['data']['server'], JSON_PRETTY_PRINT);
                 $message->reply("```json\n{$text}\n```", false);
+            break;
+
+            case 'setEchoMenu';
+                setEchoMenu($message, $details['value']);
+            break;
+
+            case 'setEchoTimetable';
+                setEchoMenu($message, $details['value']);
+            break;
+
+            case 'sendMenu';
+                $message->reply(getMenu('-1 day', 'now', true), true);
+            break;
+
+            case 'sendTimetable';
+                $message->reply(getTimetable('now', '+1 day', true), true);
             break;
 
             default;

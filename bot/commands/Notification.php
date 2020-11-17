@@ -18,3 +18,13 @@ function setNotificationHere(&$message, $value) {
     $GLOBALS['data']['notification']['here'] = (bool) $value;
     $message->reply("Updated", false);
 }
+
+function setEchoTimetable(&$message, $value) {
+    $GLOBALS['data']['notification']['timetable'] = (bool) $value;
+    $message->reply("Updated", false);
+}
+
+function setEchoMenu(&$message, $value) {
+    $GLOBALS['data']['notification']['menu'] = (bool) $value;
+    $message->reply("Updated", false);
+}

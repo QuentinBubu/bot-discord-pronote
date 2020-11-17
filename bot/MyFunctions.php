@@ -18,6 +18,7 @@ function updateRichPresence(&$discord) {
         'fusionner 2 zéros',
         'préfixes: ' . json_encode($GLOBALS['data']['prefix']),
         'help: &help',
+        'commandList: &commandList',
         'help: pronote help',
         'Créateur: Quentin_bubu'
         ];
